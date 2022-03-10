@@ -13,3 +13,4 @@ mySQL
 CRUD updates for efficiency and responsiveness
 User Interface
 Mobile support
+Bookmark favorite Recipes
