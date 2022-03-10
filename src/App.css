@@ -1,0 +1,108 @@
+body{
+    background-color: burlywood;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.slideshow{
+    width:50%;
+}
+
+.Results{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(384px, 1fr 1fr));
+    grid-gap: 1px;
+    
+}
+
+.RecipeTitle{
+    font-size: x-large;
+}
+
+.nav-links{
+    background-color: bisque;
+    overflow:hidden;
+    margin-top: 0px;
+
+}
+
+.link {
+    float:left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size:17px;
+    font-family: cursive;
+}
+
+.link:hover{
+    background-color: #ddd;
+    color:black;
+}
+
+.HomePage {
+    background-color:burlywood;
+}
+
+.recipesLetter {
+    background-color:burlywood;
+}
+
+.recipes {
+    background-color:burlywood;
+}
+
+.PageTitle {
+    font-family:cursive;
+    font-size:15px;
+}
+
+.HomeTitle{
+    font-family: cursive;
+}
+
+.introduction {
+    font-family:cursive;
+}
+
+.slideshowTitle {
+    font-family: cursive;
+}
+
+.letterTitle {
+    font-family: cursive;
+}
+
+.recipeTitle {
+    font-family: cursive;
+}
+
+.recipeSource {
+    font-family: cursive;
+}
+
+.labelTitle {
+    font-family: cursive;
+}
+
+.urlTitle {
+    font-family: cursive;
+}
+
+.specificTitle {
+    font-family: cursive;
+}
+
+.button {
+    font-family: cursive;
+}
+
+.about {
+    font-family: cursive;
+}
