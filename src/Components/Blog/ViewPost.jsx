@@ -2,19 +2,19 @@ import React, { useState, useEffect} from 'react';
 import PostService from '../../Services/PostService';
 import {useLocation} from 'react-router-dom';
 
-export default function ViewPost(){
+export default function ViewPost(props){
     
     const location = useLocation();
     const [post, setPost] = useState({
-        postId: "",
-        name: "",
-        subject: "",
-        post: ""
+        postId: '',
+        name: '',
+        subject: '',
+        post: ''
     });
 
     useEffect(() => {
         console.log(post);
-        PostService.getPostByUserId(location.state).then((res) => {
+        PostService.viewPost(location.state).then((res) => {
             console.log(res.data);
             setPost(res.data);
         });
@@ -42,10 +42,10 @@ export default function ViewPost(){
                                             <td> Name: {post.name}</td>
                                         </tr>
                                         <tr>
-                                            <td> Name: {post.subject}</td>
+                                            <td> Subject: {post.subject}</td>
                                         </tr>
                                         <tr>
-                                            <td> Name: {post.post}</td>
+                                            <td> Post: {post.post}</td>
                                         </tr>
                                     </tbody>
                                     

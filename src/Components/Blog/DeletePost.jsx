@@ -14,7 +14,8 @@ function DeletePost () {
             
     useEffect(() => {
         console.log(post);
-        PostService.getReportByUserId(location.state).then((res) =>{
+        PostService.getPostByUserId(location.state)
+        .then((res) =>{
             console.log(res.data);
             setPost(res.data);
         });

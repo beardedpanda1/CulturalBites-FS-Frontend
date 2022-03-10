@@ -35,12 +35,12 @@ export default function AddPost(){
                 console.log(res.data);
                 navigate("/add");
                 alert("Post Saved!");
-                window.location.href = "/getAll";
+                // window.location.href = "/getAll";
             })
             .catch((err) => {
                 console.log("Post not saved");
                 alert("Post not saved");
-                window.location.href = "/getAll";
+                // window.location.href = "/getAll";
             });
     }
 

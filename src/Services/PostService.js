@@ -4,7 +4,7 @@ const POST_API_BASE_URL = "http://localhost:8080/api";
 
 class PostService{
     getPosts(){
-        return axios.get(POST_API_BASE_URL+"/getAll/");
+        return axios.get(POST_API_BASE_URL+"/getAll");
     }
 
 
@@ -12,7 +12,7 @@ class PostService{
         return axios.post(POST_API_BASE_URL+"/add",post);
     }
 
-    getPostByUserId(postId){
+    viewPost(postId){
         return axios.get(POST_API_BASE_URL+"/post/"+postId);
     }
 

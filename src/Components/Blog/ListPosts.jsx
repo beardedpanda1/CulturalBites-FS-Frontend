@@ -5,7 +5,7 @@ import {useNavigate} from 'react-router-dom';
 
 export default function ListPosts() {
     const navigate = useNavigate();
-    const [posts, setPosts] = useState([]); //calling posts
+    const [posts, setPosts] = useState([""]); //calling posts
     
     useEffect(() => {
         PostService.getPosts().then((res) => {
@@ -36,7 +36,7 @@ export default function ListPosts() {
         <div>
             <h2 className="text-center">Posts List</h2>
             <div>
-                <button className="primary-button" oncClick={() => addPost()}>{" "}Add Post</button>
+                <button className="primary-button" onClick={() => addPost()}>{" "}Add Post</button>
             </div>
             <div>
                 <p></p>
